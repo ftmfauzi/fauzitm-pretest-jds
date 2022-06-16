@@ -1,28 +1,24 @@
-# docker-gs-ping
+# devops-pretest
 
-A simple Go server/microservice example for [Docker's Go Language Guide](https://docs.docker.com/language/golang/).
+DevOps / SRE Engineer (For Candidates)
 
-Notable features:
+# Result
 
-* Includes a [multi-stage `Dockerfile`](https://github.com/olliefr/docker-gs-ping/blob/main/Dockerfile.multistage), which actually is a good example of how to build Go binaries _for production releases_.
-* Has functional tests for application's business requirements with proper isolation between tests using [`ory/dockertest`](https://github.com/ory/dockertest).
-* Has a CI pipeline using GitHub Actions to run functional tests in independent containers.
-* Has a CD pipeline using GitHub Actions to publish to Docker Hub.
+1. Response URL : http://54.183.192.127:8080/ping
+```
+{
+  "status": "OK"
+}
+```
 
-Planned:
+2. Menggunakan bahasa Golang.
 
-* Building Go modules and Docker images with `goreleaser`
+3. Web-service di-build menjadi sebuah Docker/Container Image.
 
-## Want _moar_?!
+4. Docker Hub / Registry: https://hub.docker.com/repository/docker/ftmfauzi/fauzitm-pretest-jds
 
-There is a more advanced example in [olliefr/docker-gs-ping-roach](https://github.com/olliefr/docker-gs-ping-roach) using [CockroachDB](https://github.com/cockroachdb/cockroach).
+5. Deploy ke AWS
 
-## Contributing
+6. Github/Gitlab Repository (Public): https://github.com/ftmfauzi/fauzitm-pretest-jds
 
-This was written for an _introduction_ section of the Docker tutorial and as such it favours brevity and pedagogical clarity over robustness. 
-
-Thus, feedback is welcome, but please no nits or pedantry. Ain't nobody got time for that 🙃
-
-## License
-
-[Apache-2.0 License](LICENSE)
+sumber: https://wiki.digitalservice.id/share/59427262-4dfe-4153-8dc6-04023a0cc2e4
